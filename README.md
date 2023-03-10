@@ -1,2 +1,2 @@
-# kinectiv-ui-library
-A library of common UI components for Kinectiv websites
+# KUL (Kinectiv UI Library)
+A library of common UI components for Kinectiv websites.

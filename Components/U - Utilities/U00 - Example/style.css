@@ -1,0 +1,26 @@
+.example {
+    width: 500px;
+}
+.example_wide {
+    width: 800px;
+}
+.example__text {
+    margin-bottom: 25px;
+}
+.example__text:last-child {
+    margin-bottom: 0;
+}
+.example__item {
+    height: 50px;
+    margin-bottom: 10px;
+    border: 1px solid var(--g_color_3-1);
+}
+.example__item_h_sm {
+    height: 25px;
+}
+.example__item_h_lg {
+    height: 75px;
+}
+.example__item:last-child {
+    margin-bottom: 0;
+}

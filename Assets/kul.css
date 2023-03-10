@@ -1,0 +1,12 @@
+/* Background */
+body {
+    background-color: #e4e4e4 !important;
+}
+
+/* Component Preview */
+.kul-component {
+    padding: 0 100px 100px;
+}
+.kul-component:first-child {
+    padding-top: 100px;
+}
