@@ -1,6 +1,6 @@
 :root {
-    --text_font-size_default: var(--default_font-size_body);
-    --text_line-height_default: var(--default_line-height_body);
+    --text_font-size_default: var(--d_typography_font-size_default);
+    --text_line-height_default: var(--d_typography_line-height_default);
 
     --text_font-size_xs: 12px;
     --text_line-height_xs-font: 1.3;
@@ -13,20 +13,23 @@
 }
 
 .text {
+    --this_text_font-size: var(--text_font-size_default);
+    --this_text_line-height: var(--text_line-height_default);
+
     margin: 0;
-    font-family: var(--default_font-family_body);
-    font-size: var(--text_font-size_default);
-    line-height: var(--text_line-height_default);
+    font-family: var(--d_typography_font-family_default);
+    font-size: var(--this_text_font-size);
+    line-height: var(--this_text_line-height);
 }
 .text_xs {
-    font-size: var(--text_font-size_xs);
-    line-height: var(--text_line-height_xs-font);
+    --this_text_font-size: var(--text_font-size_xs);
+    --this_text_line-height: var(--text_line-height_xs-font);
 }
 .text_sm {
-    font-size: var(--text_font-size_sm);
-    line-height: var(--text_line-height_sm-font);
+    --this_text_font-size: var(--text_font-size_sm);
+    --this_text_line-height: var(--text_line-height_sm-font);
 }
 .text_lg {
-    font-size: var(--text_font-size_lg);
-    line-height: var(--text_line-height_lg-font);
+    --this_text_font-size: var(--text_font-size_lg);
+    --this_text_line-height: var(--text_line-height_lg-font);
 }

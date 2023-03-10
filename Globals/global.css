@@ -348,21 +348,32 @@ button,
 # Defaults
 --------------------------------------------------------------*/
 :root {
-    --default_color_body-light: var(--g_color_black);
-    --default_color_body-dark: var(--g_color_white);
-    --default_color_body: var(--default_color_body-light);
+    --d_typography_color_light: var(--g_color_black);
+    --d_typography_color_dark: var(--g_color_white);
 
-    --default_font-family_body: sans-serif;
-    --default_font-size_body: 18px;
-    --default_line-height_body: 1.7;
+    --d_typography_font-family_default: sans-serif;
+    --d_typography_font-size_default: 18px;
+    --d_typography_line-height_default: 1.7;
 
-    --default_color_hr-light: var(--g_color_1-3);
-    --default_color_hr-dark: var(--g_color_1-2);
-    --default_color_hr: var(--default_color_hr-light);
+    --d_hr_color_light: var(--g_color_1-3);
+    --d_hr_color_dark: var(--g_color_1-2);
+
+    --d_link_color_light: var(--g_color_3-1);
+    --d_link_color_light-visited: var(--g_color_1-2);
+    --d_link_color_light-hover: var(--g_color_3-2);
+    --d_link_color_dark: var(--g_color_3-3);
+    --d_link_color_dark-visited: var(--g_color_1-3);
+    --d_link_color_dark-hover: var(--g_color_3-4);
+
+    --this_d_typography_color: var(--d_typography_color_light);
+    --this_d_hr_color: var(--d_hr_color_light);
+    --this_d_link_color: var(--d_link_color_light);
+    --this_d_link_color_visited: var(--d_link_color_light-visited);
+    --this_d_link_color_hover: var(--d_link_color_light-hover);
 }
 
 body {
-	background: #f3f3f3;
+	background: var(--g_color_1-4);
 }
 body,
 button,
@@ -370,69 +381,49 @@ input,
 select,
 optgroup,
 textarea {
-	color: var(--default_color_body);
-	font-family: var(--default_font-family_body);
-	font-size: var(--default_font-size_body);
-	line-height: var(--default_line-height_body);
+	color: var(--this_d_typography_color);
+	font-family: var(--d_typography_font-family_default);
+	font-size: var(--d_typography_font-size_default);
+	line-height: var(--d_typography_line-height_default);
 }
 hr {
-	background-color: var(--default_color_hr);
+	background-color: var(--this_d_hr_color);
 	border: 0;
 	height: 1px;
 }
-.dark-theme {
-    --default_color_hr: var(--default_color_hr-dark);
-
-    color: var(--default_color_body-dark);
-}
-.light-theme {
-    --default_color_hr: var(--default_color_hr-light);
-
-    color: var(--default_color_body-light);
-}
-
-/*--------------------------------------------------------------
-# Links
---------------------------------------------------------------*/
-:root {
-    --link_color_default-light: var(--g_color_3-1);
-    --link_color_visited-light: var(--g_color_1-2);
-    --link_color_hover-light: var(--g_color_3-2);
-
-    --link_color_default-dark: var(--g_color_3-3);
-    --link_color_visited-dark: var(--g_color_1-3);
-    --link_color_hover-dark: var(--g_color_3-4);
-    
-    --link_color_default: var(--link_color_default-light);
-    --link_color_visited: var(--link_color_visited-light);
-    --link_color_hover: var(--link_color_hover-light);
-}
-
 a {
-	color: var(--link_color_default);
+    color: var(--this_d_link_color);
     transition: color 0.4s;
 }
 a:visited {
-	color: var(--link_color_visited);
+	color: var(--this_d_link_color_visited);
 }
 a:hover,
 a:focus,
 a:active {
-	color: var(--link_color_hover);
+	color: var(--this_d_link_color_hover);
 }
 a:hover,
 a:active {
 	outline: 0;
 }
+.dark-theme,
+.light-theme {
+    color: var(--this_d_typography_color);
+}
 .dark-theme {
-    --link_color_default: var(--link_color_default-dark);
-    --link_color_visited: var(--link_color_visited-dark);
-    --link_color_hover: var(--link_color_hover-dark);
+    --this_d_typography_color: var(--d_typography_color_dark);
+    --this_d_hr_color: var(--d_hr_color_dark);
+    --this_d_link_color: var(--d_link_color_dark);
+    --this_d_link_color_visited: var(--d_link_color_dark-visited);
+    --this_d_link_color_hover: var(--d_link_color_dark-hover);
 }
 .light-theme {
-    --link_color_default: var(--link_color_default-light);
-    --link_color_visited: var(--link_color_visited-light);
-    --link_color_hover: var(--link_color_hover-light);
+    --this_d_typography_color: var(--d_typography_color_light);
+    --this_d_hr_color: var(--d_hr_color_light);
+    --this_d_link_color: var(--d_link_color_light);
+    --this_d_link_color_visited: var(--d_link_color_light-visited);
+    --this_d_link_color_hover: var(--d_link_color_light-hover);
 }
 
 /*--------------------------------------------------------------
