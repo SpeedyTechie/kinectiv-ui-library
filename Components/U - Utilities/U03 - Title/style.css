@@ -17,7 +17,7 @@
     --this_title_line-height: var(--title_line-height_default);
 
     margin: 0;
-    font-family: serif;
+    font-family: 'Roboto Slab', serif;
     font-size: var(--this_title_font-size);
     font-weight: 700;
     line-height: var(--this_title_line-height);
