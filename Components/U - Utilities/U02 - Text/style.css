@@ -8,7 +8,7 @@
     --text_line-height_xs-font: 1.3;
 
     --text_font-size_sm: 14px;
-    --text_line-height_sm-font: 1.7;
+    --text_line-height_sm-font: var(--text_line-height_default);
 
     --text_font-size_lg: 24px;
     --text_line-height_lg-font: 1.4;

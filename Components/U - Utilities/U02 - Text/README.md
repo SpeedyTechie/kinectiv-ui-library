@@ -1,5 +1,5 @@
 # U02 - Text
-v1.0.0
+v1.0.1
 
 ### Modifiers
 * `text`
