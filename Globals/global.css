@@ -345,6 +345,13 @@ button,
 }
 
 /*--------------------------------------------------------------
+## Transition
+--------------------------------------------------------------*/
+:root {
+    --g_transition_default: 0.4s;
+}
+
+/*--------------------------------------------------------------
 # Defaults
 --------------------------------------------------------------*/
 :root {
@@ -393,7 +400,7 @@ hr {
 }
 a {
     color: var(--this_d_link_color);
-    transition: color 0.4s;
+    transition: color var(--g_transition_default);
 }
 a:visited {
 	color: var(--this_d_link_color_visited);
