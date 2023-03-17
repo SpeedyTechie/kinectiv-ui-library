@@ -2,7 +2,7 @@
 v1.0.0
 
 ### Dependencies
-* U02 - Text
+* U03 - Text
 
 ### Modifiers
 * `example`

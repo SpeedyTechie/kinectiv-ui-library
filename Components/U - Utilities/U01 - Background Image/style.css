@@ -1,0 +1,47 @@
+.bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-image_repeat_x {
+    background-repeat: repeat-x;
+}
+.bg-image_repeat_y {
+    background-repeat: repeat-y;
+}
+.bg-image_repeat_both {
+    background-repeat: repeat;
+}
+.bg-image_size_contain {
+    background-size: contain;
+}
+.bg-image_size_fit-width {
+    background-size: 100%;
+}
+.bg-image_size_fit-height {
+    background-size: auto 100%;
+}
+.bg-image_pos_left-top {
+    background-position: left top;
+}
+.bg-image_pos_left-center {
+    background-position: left;
+}
+.bg-image_pos_left-bottom {
+    background-position: left bottom;
+}
+.bg-image_pos_center-top {
+    background-position: top;
+}
+.bg-image_pos_center-bottom {
+    background-position: bottom;
+}
+.bg-image_pos_right-top {
+    background-position: right top;
+}
+.bg-image_pos_right-center {
+    background-position: right;
+}
+.bg-image_pos_right-bottom {
+    background-position: right bottom;
+}
