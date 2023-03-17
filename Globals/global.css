@@ -336,6 +336,39 @@ button,
 }
 
 /*--------------------------------------------------------------
+## Typography
+--------------------------------------------------------------*/
+:root {
+    --g_font-family_default: sans-serif;
+    --g_font-family_title: serif;
+}
+
+/*--------------------------------------------------------------
+## Padding
+--------------------------------------------------------------*/
+:root {
+    /* Vertical Container Padding */
+    --g_padding-y_default: 100px;
+    --g_padding-y_sm: 50px;
+    --g_padding-y_md: 75px;
+    --g_padding-y_lg: 150px;
+
+    /* Horizontal Container Padding */
+    --g_padding-x_default: 100px;
+    --g_padding-x_sm: 50px;
+}
+
+/*--------------------------------------------------------------
+## Max-Width
+--------------------------------------------------------------*/
+:root {
+    /* Content Width */
+    --g_max-width_default: 1400px;
+    --g_max-width_sm: 865px;
+    --g_max-width_md: 1015px;
+}
+
+/*--------------------------------------------------------------
 ## Border Radius
 --------------------------------------------------------------*/
 :root {
@@ -354,31 +387,6 @@ button,
 /*--------------------------------------------------------------
 # Defaults
 --------------------------------------------------------------*/
-:root {
-    --d_typography_color_light: var(--g_color_black);
-    --d_typography_color_dark: var(--g_color_white);
-
-    --d_typography_font-family_default: sans-serif;
-    --d_typography_font-size_default: 18px;
-    --d_typography_line-height_default: 1.7;
-
-    --d_hr_color_light: var(--g_color_1-3);
-    --d_hr_color_dark: var(--g_color_1-2);
-
-    --d_link_color_light: var(--g_color_3-1);
-    --d_link_color_light-visited: var(--g_color_1-2);
-    --d_link_color_light-hover: var(--g_color_3-2);
-    --d_link_color_dark: var(--g_color_3-3);
-    --d_link_color_dark-visited: var(--g_color_1-3);
-    --d_link_color_dark-hover: var(--g_color_3-4);
-
-    --this_d_typography_color: var(--d_typography_color_light);
-    --this_d_hr_color: var(--d_hr_color_light);
-    --this_d_link_color: var(--d_link_color_light);
-    --this_d_link_color_visited: var(--d_link_color_light-visited);
-    --this_d_link_color_hover: var(--d_link_color_light-hover);
-}
-
 body {
 	background: var(--g_color_1-4);
 }
@@ -388,49 +396,52 @@ input,
 select,
 optgroup,
 textarea {
-	color: var(--this_d_typography_color);
-	font-family: var(--d_typography_font-family_default);
-	font-size: var(--d_typography_font-size_default);
-	line-height: var(--d_typography_line-height_default);
+	color: var(--g_color_black);
+	font-family: var(--g_font-family_default);
+	font-size: 18px;
+	line-height: 1.7;
 }
 hr {
-	background-color: var(--this_d_hr_color);
+	background-color: var(--g_color_1-3);
 	border: 0;
 	height: 1px;
 }
 a {
-    color: var(--this_d_link_color);
+    color: var(--g_color_3-1);
     transition: color var(--g_transition_default);
 }
 a:visited {
-	color: var(--this_d_link_color_visited);
+	color: var(--g_color_1-2);
 }
 a:hover,
 a:focus,
 a:active {
-	color: var(--this_d_link_color_hover);
+	color: var(--g_color_3-2);
 }
 a:hover,
 a:active {
 	outline: 0;
 }
-.dark-theme,
-.light-theme {
-    color: var(--this_d_typography_color);
-}
+
+/*--------------------------------------------------------------
+## Dark Theme (defaults for dark backgrounds)
+--------------------------------------------------------------*/
 .dark-theme {
-    --this_d_typography_color: var(--d_typography_color_dark);
-    --this_d_hr_color: var(--d_hr_color_dark);
-    --this_d_link_color: var(--d_link_color_dark);
-    --this_d_link_color_visited: var(--d_link_color_dark-visited);
-    --this_d_link_color_hover: var(--d_link_color_dark-hover);
+    color: var(--g_color_white);
 }
-.light-theme {
-    --this_d_typography_color: var(--d_typography_color_light);
-    --this_d_hr_color: var(--d_hr_color_light);
-    --this_d_link_color: var(--d_link_color_light);
-    --this_d_link_color_visited: var(--d_link_color_light-visited);
-    --this_d_link_color_hover: var(--d_link_color_light-hover);
+.dark-theme hr {
+    background-color: var(--g_color_1-2);
+}
+.dark-theme a {
+    color: var(--g_color_3-3);
+}
+.dark-theme a:visited {
+    color: var(--g_color_1-3);
+}
+.dark-theme a:hover,
+.dark-theme a:focus,
+.dark-theme a:active {
+	color: var(--g_color_3-4);
 }
 
 /*--------------------------------------------------------------

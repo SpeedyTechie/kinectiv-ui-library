@@ -1,0 +1,105 @@
+.button {
+    background-color: var(--g_color_1-1);
+    display: inline-block;
+    padding: 0.5em 1.2em;
+    color: var(--g_color_white);
+    font-family: var(--g_font-family_title);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    text-align: center;
+    border: 0;
+    border-radius: var(--g_border-radius_md);
+    transition: var(--g_transition_default);
+}
+.button_sm {
+    font-size: 14px;
+    border-radius: var(--g_border-radius_sm);
+}
+.button_lg {
+    font-size: 30px;
+    border-radius: var(--g_border-radius_lg);
+}
+.button_square {
+    padding: 0.5em;
+}
+.button_color_light {
+    background-color: var(--g_color_1-4);
+    color: var(--g_color_black);
+}
+.button_color_secondary {
+    background-color: var(--g_color_2-1);
+}
+.button_color_secondary-light {
+    background-color: var(--g_color_2-3);
+}
+.button_color_tertiary {
+    background-color: var(--g_color_3-1);
+}
+.button_color_tertiary-light {
+    background-color: var(--g_color_3-3);
+}
+.button:visited {
+    color: var(--g_color_white);
+}
+.button_color_light:visited,
+.button_color_secondary-light:visited,
+.button_color_tertiary-light:visited {
+    color: var(--g_color_black);
+}
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: var(--g_color_black);
+    color: var(--g_color_white);
+}
+.button_color_light:hover,
+.button_color_light:focus,
+.button_color_light:active {
+    background-color: var(--g_color_white);
+    color: var(--g_color_black);
+}
+.button_color_secondary:hover,
+.button_color_secondary:focus,
+.button_color_secondary:active {
+    background-color: var(--g_color_2-2);
+}
+.button_color_secondary-light:hover,
+.button_color_secondary-light:focus,
+.button_color_secondary-light:active {
+    background-color: var(--g_color_2-4);
+    color: var(--g_color_black);
+}
+.button_color_tertiary:hover,
+.button_color_tertiary:focus,
+.button_color_tertiary:active {
+    background-color: var(--g_color_3-2);
+}
+.button_color_tertiary-light:hover,
+.button_color_tertiary-light:focus,
+.button_color_tertiary-light:active {
+    background-color: var(--g_color_3-4);
+    color: var(--g_color_black);
+}
+.button__icon {
+    display: block;
+    width: auto;
+    height: 1em;
+    margin: 0.1em;
+}
+.button__icon_bg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 1em;
+}
+.button__icon_inline {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0.2em;
+    margin-left: 0;
+}
+.button__icon-fill {
+    fill: currentColor;
+}

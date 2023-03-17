@@ -1,8 +1,8 @@
 # U02 - Text
-v1.0.6
+v1.0.7
 
 ### Modifiers
 * `text`
-    * `text_xs`: Adjust text size (extra small)
-    * `text_sm`: Adjust text size (small)
-    * `text_lg`: Adjust text size (large)
+    * `text_xs`: Extra small text size
+    * `text_sm`: Small text size
+    * `text_lg`: Large text size

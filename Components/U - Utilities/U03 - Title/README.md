@@ -1,8 +1,8 @@
 # U03 - Title
-v1.0.0
+v1.0.1
 
 ### Modifiers
 * `title`
-    * `title_sm`: Adjust title size (small)
-    * `title_lg`: Adjust title size (large)
-    * `title_xl`: Adjust title size (extra large)
+    * `title_sm`: Small title size
+    * `title_lg`: Large title size
+    * `title_xl`: Extra large title size

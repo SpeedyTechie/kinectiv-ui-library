@@ -6,11 +6,11 @@ v1.0.0
 
 ### Modifiers
 * `example`
-    * `example_wide`: Increase section max-width
+    * `example_wide`: Increased section max-width
 * `example__item`
-    * `example__item_h_*`: Adjust item height
-        * `example__item_h_sm`: Small
-        * `example__item_h_lg`: Large
+    * `example__item_h_*`: Item height
+        * `example__item_h_sm`
+        * `example__item_h_lg`
 
 ### Notes
 * This is an example that can be used as a template for setting up new components

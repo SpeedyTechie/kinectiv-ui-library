@@ -1,28 +1,28 @@
 # U01 - Section
-v1.0.1
+v1.0.2
 
 ### Modifiers
 * `section`
-    * `section_y_*`: Adjust top/bottom padding
-        * `section_y_sm`: Small
-        * `section_y_md`: Medium
-        * `section_y_lg`: Large
-        * `section_y_none`: None
-    * `section_top_*`: Adjust top padding
-        * `section_top_sm`: Small
-        * `section_top_md`: Medium
-        * `section_top_lg`: Large
-        * `section_top_none`: None
-    * `section_bottom_*`: Adjust bottom padding
-        * `section_bottom_sm`: Small
-        * `section_bottom_md`: Medium
-        * `section_bottom_lg`: Large
-        * `section_bottom_none`: None
-    * `section_x_*`: Adjust left/right padding
-        * `section_x_sm`: Small
-        * `section_x_none`: None
+    * `section_y_*`: Top/bottom padding
+        * `section_y_sm`
+        * `section_y_md`
+        * `section_y_lg`
+        * `section_y_none`
+    * `section_top_*`: Top padding
+        * `section_top_sm`
+        * `section_top_md`
+        * `section_top_lg`
+        * `section_top_none`
+    * `section_bottom_*`: Bottom padding
+        * `section_bottom_sm`
+        * `section_bottom_md`
+        * `section_bottom_lg`
+        * `section_bottom_none`
+    * `section_x_*`: Left/right padding
+        * `section_x_sm`
+        * `section_x_none`
 * `section__content`
-    * `section__content_w_*`: Adjust maximum content width
-        * `section__content_w_sm`: Small
-        * `section__content_w_md`: Medium
-        * `section__content_w_full`: Full-width
+    * `section__content_w_*`: Maximum content width
+        * `section__content_w_sm`
+        * `section__content_w_md`
+        * `section__content_w_full`

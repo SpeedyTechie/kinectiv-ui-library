@@ -1,35 +1,17 @@
-:root {
-    --text_font-size_default: var(--d_typography_font-size_default);
-    --text_line-height_default: var(--d_typography_line-height_default);
-
-    --text_font-size_xs: 12px;
-    --text_line-height_xs-font: 1.3;
-
-    --text_font-size_sm: 14px;
-    --text_line-height_sm-font: 1.7;
-
-    --text_font-size_lg: 24px;
-    --text_line-height_lg-font: 1.4;
-}
-
 .text {
-    --this_text_font-size: var(--text_font-size_default);
-    --this_text_line-height: var(--text_line-height_default);
-
     margin: 0;
-    font-family: var(--d_typography_font-family_default);
-    font-size: var(--this_text_font-size);
-    line-height: var(--this_text_line-height);
+    font-family: var(--g_font-family_default);
+    font-size: 18px;
+    line-height: 1.7;
 }
 .text_xs {
-    --this_text_font-size: var(--text_font-size_xs);
-    --this_text_line-height: var(--text_line-height_xs-font);
+    font-size: 12px;
+    line-height: 1.3;
 }
 .text_sm {
-    --this_text_font-size: var(--text_font-size_sm);
-    --this_text_line-height: var(--text_line-height_sm-font);
+    font-size: 14px;
 }
 .text_lg {
-    --this_text_font-size: var(--text_font-size_lg);
-    --this_text_line-height: var(--text_line-height_lg-font);
+    font-size: 24px;
+    line-height: 1.4;
 }

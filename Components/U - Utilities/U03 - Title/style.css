@@ -1,36 +1,23 @@
-:root {
-    --title_font-size_default: 30px;
-    --title_line-height_default: 1.15;
-
-    --title_font-size_sm: 20px;
-    --title_line-height_font-sm: 1.2;
-
-    --title_font-size_lg: 40px;
-    --title_line-height_font-lg: 1.25;
-
-    --title_font-size_xl: 60px;
-    --title_line-height_font-xl: 1.25;
-}
-
+h1, h2, h3, h4, h5, h6,
 .title {
-    --this_title_font-size: var(--title_font-size_default);
-    --this_title_line-height: var(--title_line-height_default);
-
     margin: 0;
-    font-family: serif;
-    font-size: var(--this_title_font-size);
+    font-family: var(--g_font-family_title);
+    font-size: 30px;
     font-weight: 700;
-    line-height: var(--this_title_line-height);
+    line-height: 1.15;
 }
+h5, h6,
 .title_sm {
-    --this_title_font-size: var(--title_font-size_sm);
-    --this_title_line-height: var(--title_line-height_font-sm);
+    font-size: 20px;
+    line-height: 1.2;
 }
+h3,
 .title_lg {
-    --this_title_font-size: var(--title_font-size_lg);
-    --this_title_line-height: var(--title_line-height_font-lg);
+    font-size: 40px;
+    line-height: 1.25;
 }
+h1, h2,
 .title_xl {
-    --this_title_font-size: var(--title_font-size_xl);
-    --this_title_line-height: var(--title_line-height_font-xl);
+    font-size: 60px;
+    line-height: 1.25;
 }
