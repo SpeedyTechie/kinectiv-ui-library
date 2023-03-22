@@ -1,0 +1,174 @@
+.body-text-1_center {
+    text-align: center;
+}
+.body-text-1_right {
+    text-align: right;
+}
+.body-text-1::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.body-text-1 h1,
+.body-text-1 h2,
+.body-text-1 h3,
+.body-text-1 h4,
+.body-text-1 h5,
+.body-text-1 h6 {
+    margin: 1.2em 0 0.5em;
+    clear: both;
+}
+.body-text-1 h4,
+.body-text-1 h5,
+.body-text-1 h6 {
+    clear: none;
+}
+.body-text-1 p {
+    margin: 1em 0;
+}
+.body-text-1 blockquote {
+    position: relative;
+    margin: 2.5em 0;
+    padding-left: 4em;
+}
+.body-text-1_center blockquote {
+    margin-right: 4em;
+    margin-left: 4em;
+    padding-top: 3em;
+    padding-bottom: 1.6em;
+    padding-left: 0;
+}
+.body-text-1_right blockquote {
+    padding-right: 4em;
+    padding-left: 0;
+}
+.body-text-1 blockquote::before {
+    content: '';
+    background-image: url('images/quote-icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.8em;
+    height: 0.8em;
+}
+.body-text-1_center blockquote::before {
+    right: 0;
+    left: 0;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 auto;
+}
+.body-text-1_right blockquote::before {
+    right: 0;
+    left: auto;
+    transform: rotate(180deg);
+}
+.body-text-1 blockquote::after {
+    content: '';
+    background-color: var(--g_color_black);
+    position: absolute;
+    top: 1.2em;
+    bottom: 0;
+    left: 0.35em;
+    width: 0.1em;
+}
+.body-text-1_center blockquote::after {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 20%;
+    height: 0.1em;
+}
+.body-text-1_right blockquote::after {
+    right: 0.35em;
+    left: auto;
+}
+.body-text-1 blockquote p {
+    margin: 0.8em 0;
+}
+.body-text-1 hr {
+    margin: 1.5em 0;
+}
+.body-text-1 ol,
+.body-text-1 ul {
+    margin: 1.5em 0;
+    padding-left: 4em;
+}
+.body-text-1_center ol,
+.body-text-1_center ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 4em;
+}
+.body-text-1_right ol,
+.body-text-1_right ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.body-text-1 li ol,
+.body-text-1 li ul {
+    margin: 0;
+    padding-left: 3em;
+}
+.body-text-1 ul ::marker {
+    color: var(--g_color_1-2);
+}
+.body-text-1 h1:first-child,
+.body-text-1 h2:first-child,
+.body-text-1 h3:first-child,
+.body-text-1 h4:first-child,
+.body-text-1 h5:first-child,
+.body-text-1 h6:first-child,
+.body-text-1 p:first-child,
+.body-text-1 blockquote:first-child,
+.body-text-1 hr:first-child {
+    margin-top: 0;
+}
+.body-text-1 p:last-child,
+.body-text-1 blockquote:last-child,
+.body-text-1 hr:last-child {
+    margin-bottom: 0;
+}
+.body-text-1 figure {
+    max-width: 100%;
+	margin: 0;
+    text-align: left;
+}
+.body-text-1 img {
+    display: block;
+}
+.body-text-1_center figure,
+.body-text-1_center img {
+    margin-right: auto;
+    margin-left: auto;
+}
+.body-text-1_right figure,
+.body-text-1_right img {
+    margin-left: auto;
+}
+.body-text-1 .alignleft {
+	float: left;
+	margin: 0 1.5em 1em 0;
+}
+.body-text-1 .alignright {
+	float: right;
+    margin: 0 0 1em 1.5em;
+}
+.body-text-1 .aligncenter {
+	margin: 0 auto 1em;
+    text-align: center;
+	clear: both;
+}
+.body-text-1 figcaption {
+	margin-top: 0.5em;
+    color: var(--g_color_1-2);
+    font-style: italic;
+    line-height: 1.3;
+}
