@@ -1,5 +1,5 @@
 # U05 - Button
-v1.0.1
+v1.0.2
 
 ### Modifiers
 * `button`
@@ -12,6 +12,8 @@ v1.0.1
         * `button_color_secondary-light`
         * `button_color_tertiary`
         * `button_color_tertiary-light`
+    * `button_w_*`: Width
+        * `button_w_full`
 * `button__icon`
     * `button__icon_bg`: Background image as icon (instead of default img/svg element)
     * `button__icon_inline`: Formatting for display next to text

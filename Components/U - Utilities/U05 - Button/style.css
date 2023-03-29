@@ -24,6 +24,10 @@
 .button_square {
     padding: 0.5em;
 }
+.button_w_full {
+    display: block;
+    width: 100%;
+}
 .button_color_light {
     background-color: var(--g_color_1-4);
     color: var(--g_color_black);
