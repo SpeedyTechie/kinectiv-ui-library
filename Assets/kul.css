@@ -1,5 +1,8 @@
-/* Background */
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap');
+
 body {
+    --g_font-family_title: 'Zilla Slab', serif;
+
     background-color: #e4e4e4 !important;
 }
 
