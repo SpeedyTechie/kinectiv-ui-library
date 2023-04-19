@@ -19,6 +19,11 @@ v1.0.0
         * `tile-2__image_h_md`
         * `tile-2__image_h_lg`
         * `tile-2__image_h_xl`
+* `tile-2__content`
+    * `tile-2__content_bg_`: Background color
+        * `tile-2__content_bg_none`
+    * `tile-2__content_top_*`: Top padding
+        * `tile-2__content_top_none`
 * `tile-2__item`
     * `tile-2__item_grow`: Grow to fill available height
     * `tile-2__item_top_*`: Top margin
