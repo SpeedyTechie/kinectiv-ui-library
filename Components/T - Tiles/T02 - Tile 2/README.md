@@ -9,7 +9,7 @@ v1.0.0
 
 ### Modifiers
 * `tile-2`
-    * `tile-2_color_`: Color scheme
+    * `tile-2_color_*`: Color scheme
         * `tile-2_color_dark`
 * `tile-2__part`
     * `tile-2__part_grow`: Grow to fill available height
@@ -20,7 +20,7 @@ v1.0.0
         * `tile-2__image_h_lg`
         * `tile-2__image_h_xl`
 * `tile-2__content`
-    * `tile-2__content_bg_`: Background color
+    * `tile-2__content_bg_*`: Background color
         * `tile-2__content_bg_none`
     * `tile-2__content_top_*`: Top padding
         * `tile-2__content_top_none`
