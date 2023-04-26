@@ -1,5 +1,5 @@
 # T01 - Tile 1
-v1.0.1
+v1.0.2
 
 ### Dependencies
 * U01 - Background Image
@@ -20,8 +20,8 @@ v1.0.1
     * `tile-1__item_grow`: Grow to fill available height
     * `tile-1__item_top_*`: Top margin
         * `tile-1__item_top_sm`
-        * `tile-1__item_top_md`
         * `tile-1__item_top_lg`
+        * `tile-1__item_top_xl`
         * `tile-1__item_top_none`
 * `tile-1__text`
     * `tile-1__text_alt-color`: Alternate color

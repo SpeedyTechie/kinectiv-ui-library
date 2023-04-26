@@ -27,7 +27,7 @@ v1.0.1
 * `tile-2__item`
     * `tile-2__item_grow`: Grow to fill available height
     * `tile-2__item_top_*`: Top margin
+        * `tile-2__item_top_xs`
         * `tile-2__item_top_sm`
-        * `tile-2__item_top_md`
         * `tile-2__item_top_lg`
         * `tile-2__item_top_none`
