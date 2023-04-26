@@ -1,4 +1,5 @@
 .tile-4 {
+    display: block;
     padding: 0;
     color: var(--g_color_black);
     text-align: left;
