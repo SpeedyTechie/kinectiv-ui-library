@@ -101,7 +101,7 @@
 .tile-1__item:first-child {
     margin-top: 0;
 }
-.tile-1__text_alt-color {
+.tile-1__text_color_alt {
     color: var(--g_color_1-2);
 }
 .tile-1__list {

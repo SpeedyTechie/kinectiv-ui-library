@@ -1,5 +1,5 @@
 # T01 - Tile 1
-v1.0.2
+v1.0.3
 
 ### Dependencies
 * U01 - Background Image
@@ -24,4 +24,5 @@ v1.0.2
         * `tile-1__item_top_xl`
         * `tile-1__item_top_none`
 * `tile-1__text`
-    * `tile-1__text_alt-color`: Alternate color
+    * `tile-1__text_color_*`: Text color
+        * `tile-1__text_color_alt`
