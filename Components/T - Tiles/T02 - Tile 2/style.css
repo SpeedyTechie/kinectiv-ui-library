@@ -8,7 +8,7 @@
     text-decoration: none;
     border: 0;
     border-radius: var(--g_border-radius_lg);
-    box-shadow: 0 6px 10px rgba(var(--g_rgb_black), 0.15);
+    box-shadow: var(--g_box-shadow_default);
 }
 .tile-2_color_dark {
     color: var(--g_color_white);
