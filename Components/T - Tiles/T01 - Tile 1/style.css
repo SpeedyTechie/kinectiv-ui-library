@@ -110,7 +110,7 @@
     list-style: none;
 }
 .tile-1__list-item {
-    padding: 8px 0;
+    padding: 0.5em 0;
     border-top: 1px solid var(--g_color_1-3);
 }
 .tile-1__list-item:first-child {

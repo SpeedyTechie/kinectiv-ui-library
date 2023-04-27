@@ -422,10 +422,6 @@ a:focus,
 a:active {
 	color: var(--g_color_3-2);
 }
-a:hover,
-a:active {
-	outline: 0;
-}
 
 /*--------------------------------------------------------------
 ## Dark Theme (defaults for dark backgrounds)
