@@ -1,0 +1,15 @@
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -6px;
+}
+.button-group_center {
+    justify-content: center;
+}
+.button-group_right {
+    justify-content: flex-end;
+}
+.button-group__item {
+    padding: 6px;
+}
