@@ -10,6 +10,22 @@ body {
 .kul-component {
     padding: 0 100px 100px;
 }
+.kul-component_top_none,
+.kul-component_y_none {
+    padding-top: 0;
+}
+.kul-component_bottom_none,
+.kul-component_y_none {
+    padding-bottom: 0;
+}
+.kul-component_right_none,
+.kul-component_x_none {
+    padding-right: 0;
+}
+.kul-component_left_none,
+.kul-component_x_none {
+    padding-left: 0;
+}
 .kul-component:first-child {
     padding-top: 100px;
 }

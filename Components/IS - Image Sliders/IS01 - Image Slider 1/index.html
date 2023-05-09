@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>IS01 - Image Slider 1</title>
+
+        <!-- Preview/Testing CSS & JS -->
+        <link rel="stylesheet" href="../../../Assets/kul.css" type="text/css" />
+        <script src="../../../Assets/jquery.js" type="text/javascript"></script>
+
+        <!-- Global CSS & JS -->
+        <link rel="stylesheet" href="../../../Globals/global.css" type="text/css" />
+        <script src="../../../Globals/global.js" type="text/javascript"></script>
+
+        <!-- Dependency CSS & JS -->
+        <link rel="stylesheet" href="../../../Assets/slick.css" type="text/css" />
+        <script src="../../../Assets/slick.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="../../U - Utilities/U01 - Background Image/style.css" type="text/css" />
+        <link rel="stylesheet" href="../../U - Utilities/U03 - Text/style.css" type="text/css" />
+        <link rel="stylesheet" href="../../U - Utilities/U04 - Title/style.css" type="text/css" />
+        <link rel="stylesheet" href="../../U - Utilities/U05 - Button/style.css" type="text/css" />
+
+        <!-- Component CSS & JS -->
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script src="script.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="kul-component">
+            <div class="image-slider-1">
+                <h2 class="image-slider-1__title title title_sm">Lorem Ipsum Title</h2>
+                <div class="image-slider-1__main">
+                    <button type="button" class="image-slider-1__button image-slider-1__button_prev">
+                        <div class="button button_sm button_square image-slider-1__button-inner">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Previous Slide"></div>
+                        </div>
+                    </button>
+                    <div class="image-slider-1__slider">
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">Lorem ipsum dolor sit amet consectetur adipiscing elit, vestibulum gravida duis vitae.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">Lorem ipsum dolor sit amet consectetur adipiscing elit nulla eget malesuada nam, leo class nisl faucibus suscipit pellentesque ullamcorper sodales facilisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="image-slider-1__button image-slider-1__button_next">
+                        <div class="button button_sm button_square image-slider-1__button-inner">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Next Slide"></div>
+                        </div>
+                    </button>
+                </div>
+                <p class="image-slider-1__text text text_sm">External caption lorem ipsum dolor sit amet consectetur adipiscing elit curae dignissim dis, sollicitudin mauris.</p>
+            </div>
+        </div>
+        <div class="kul-component">
+            <div class="image-slider-1 image-slider-1_no-previews">
+                <div class="image-slider-1__main">
+                    <button type="button" class="image-slider-1__button image-slider-1__button_prev">
+                        <p class="image-slider-1__button-inner text text_sm">
+                            <span class="image-slider-1__button-vert-text text text_sm">Text Here</span>
+                            <span class="image-slider-1__button-icon bg-image bg-image_size_contain" role="img" aria-label="Previous Slide"></span>
+                        </p>
+                    </button>
+                    <div class="image-slider-1__slider">
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">Lorem ipsum dolor sit amet consectetur adipiscing elit, vestibulum gravida duis vitae.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">Lorem ipsum dolor sit amet consectetur adipiscing elit nulla eget malesuada nam, leo class nisl faucibus suscipit pellentesque ullamcorper sodales facilisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="image-slider-1__button image-slider-1__button_next">
+                        <p class="image-slider-1__button-inner text text_sm">
+                            <span class="image-slider-1__button-vert-text text text_sm">Text Here</span>
+                            <span class="image-slider-1__button-icon bg-image bg-image_size_contain" role="img" aria-label="Next Slide"></span>
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="kul-component">
+            <div class="image-slider-1">
+                <h2 class="image-slider-1__title title title_sm">Slider with One Slide</h2>
+                <div class="image-slider-1__main">
+                    <button type="button" class="image-slider-1__button image-slider-1__button_prev">
+                        <div class="button button_sm button_square image-slider-1__button-inner">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Previous Slide"></div>
+                        </div>
+                    </button>
+                    <div class="image-slider-1__slider">
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">Lorem ipsum dolor sit amet consectetur adipiscing elit, vestibulum gravida duis vitae.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="image-slider-1__button image-slider-1__button_next">
+                        <div class="button button_sm button_square image-slider-1__button-inner">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Next Slide"></div>
+                        </div>
+                    </button>
+                </div>
+                <p class="image-slider-1__text text text_sm">External caption lorem ipsum dolor sit amet consectetur adipiscing elit curae dignissim dis, sollicitudin mauris.</p>
+            </div>
+        </div>
+        <div class="kul-component kul-component_x_none">
+            <div class="image-slider-1 image-slider-1_flush">
+                <h2 class="image-slider-1__title title title_sm">Lorem Ipsum Title Flush Slider</h2>
+                <div class="image-slider-1__main">
+                    <button type="button" class="image-slider-1__button image-slider-1__button_prev">
+                        <div class="button button_sm button_square image-slider-1__button-inner">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Previous Slide"></div>
+                        </div>
+                    </button>
+                    <div class="image-slider-1__slider">
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">Lorem ipsum dolor sit amet consectetur adipiscing elit, vestibulum gravida duis vitae.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">Lorem ipsum dolor sit amet consectetur adipiscing elit nulla eget malesuada nam, leo class nisl faucibus suscipit pellentesque ullamcorper sodales facilisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="image-slider-1__button image-slider-1__button_next">
+                        <div class="button button_sm button_square image-slider-1__button-inner">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Next Slide"></div>
+                        </div>
+                    </button>
+                </div>
+                <p class="image-slider-1__text text text_sm">External caption lorem ipsum dolor sit amet consectetur adipiscing elit curae dignissim dis, sollicitudin mauris.</p>
+            </div>
+        </div>
+        <div class="kul-component">
+            <div class="image-slider-1">
+                <div class="image-slider-1__main">
+                    <button type="button" class="image-slider-1__button image-slider-1__button_prev">
+                        <div class="button button_sm button_square image-slider-1__button-inner">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Previous Slide"></div>
+                        </div>
+                    </button>
+                    <div class="image-slider-1__slider" data-slides-to-show="2">
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide image-slider-1__slide_h_lg">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">Lorem ipsum dolor sit amet consectetur adipiscing elit, vestibulum gravida duis vitae.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide image-slider-1__slide_h_lg">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide image-slider-1__slide_h_lg">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide image-slider-1__slide_h_lg">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide image-slider-1__slide_h_lg">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="image-slider-1__button image-slider-1__button_next">
+                        <div class="button button_sm button_square image-slider-1__button-inner">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Next Slide"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="kul-component">
+            <div class="image-slider-1">
+                <div class="image-slider-1__main">
+                    <button type="button" class="image-slider-1__button image-slider-1__button_prev">
+                        <div class="button button_sm button_square image-slider-1__button-inner">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Previous Slide"></div>
+                        </div>
+                    </button>
+                    <div class="image-slider-1__slider" data-slides-to-show="2">
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide image-slider-1__slide_h_lg">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">This slider doesn't have any additional slides to advance to, so the buttons are hidden.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="image-slider-1__button image-slider-1__button_next">
+                        <div class="button button_sm button_square image-slider-1__button-inner">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Next Slide"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="kul-component">
+            <div class="image-slider-1 image-slider-1_next-only">
+                <h2 class="image-slider-1__title title title_sm">Lorem Ipsum Title</h2>
+                <div class="image-slider-1__main">
+                    <div class="image-slider-1__slider">
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">Lorem ipsum dolor sit amet consectetur adipiscing elit, vestibulum gravida duis vitae.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">Lorem ipsum dolor sit amet consectetur adipiscing elit nulla eget malesuada nam, leo class nisl faucibus suscipit pellentesque ullamcorper sodales facilisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="image-slider-1__button image-slider-1__button_next">
+                        <div class="button button_sm button_square image-slider-1__button-inner">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Next Slide"></div>
+                        </div>
+                    </button>
+                </div>
+                <p class="image-slider-1__text text text_sm">External caption lorem ipsum dolor sit amet consectetur adipiscing elit curae dignissim dis, sollicitudin mauris.</p>
+            </div>
+        </div>
+        <div class="kul-component kul-component_right_none">
+            <div class="image-slider-1 image-slider-1_next-only image-slider-1_flush-right">
+                <div class="image-slider-1__main">
+                    <div class="image-slider-1__slider">
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">Lorem ipsum dolor sit amet consectetur adipiscing elit, vestibulum gravida duis vitae.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">Lorem ipsum dolor sit amet consectetur adipiscing elit nulla eget malesuada nam, leo class nisl faucibus suscipit pellentesque ullamcorper sodales facilisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="image-slider-1__button image-slider-1__button_next">
+                        <div class="button button_sm button_square image-slider-1__button-inner">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Next Slide"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="kul-component">
+            <div class="image-slider-1 image-slider-1_next-only image-slider-1_no-previews">
+                <div class="image-slider-1__main">
+                    <div class="image-slider-1__slider">
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">Lorem ipsum dolor sit amet consectetur adipiscing elit, vestibulum gravida duis vitae.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                <div class="image-slider-1__caption dark-theme">
+                                    <p class="image-slider-1__caption-text text text_sm">Lorem ipsum dolor sit amet consectetur adipiscing elit nulla eget malesuada nam, leo class nisl faucibus suscipit pellentesque ullamcorper sodales facilisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider-1__item">
+                            <div class="image-slider-1__slide">
+                                <div class="image-slider-1__image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="image-slider-1__button image-slider-1__button_next">
+                        <p class="image-slider-1__button-inner text text_sm">
+                            <span class="image-slider-1__button-vert-text text text_sm">Text Here</span>
+                            <span class="image-slider-1__button-icon bg-image bg-image_size_contain" role="img" aria-label="Next Slide"></span>
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
