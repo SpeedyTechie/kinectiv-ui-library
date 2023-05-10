@@ -6,7 +6,7 @@ function initImageSlider1() {
         var slider = sliderWrap.find('.image-slider-1__slider');
         var sliderButtons = sliderWrap.find('.image-slider-1__button');
 
-        var slidesToShow = parseInt(slider.attr('data-slides-to-show')) || 1;
+        var slidesToShow = parseInt(slider.attr('data-slides-to-show')) || 1; // get number of slides to show from data attribute, or fall back to default of 1
         
 
         // get active slide(s)
@@ -19,22 +19,24 @@ function initImageSlider1() {
                 for (i = Math.ceil((slidesToShow - 1) / 2); i > 0; i--) {
                     var newSlide = currentSlide - i;
 
+                    // get correct slide index if the index is outside the range of slides
                     if (newSlide < 0) {
                         newSlide = total + newSlide;
                     }
 
-                    activeSlides.push(newSlide);
+                    activeSlides.push(newSlide); // add index to list of active slides
                 }
 
                 // add slides to right of current slide
                 for (i = Math.floor((slidesToShow - 1) / 2); i > 0; i--) {
                     var newSlide = currentSlide + i;
 
+                    // get correct slide index if the index is outside the range of slides
                     if (newSlide > total - 1) {
                         newSlide = newSlide - total;
                     }
 
-                    activeSlides.push(newSlide);
+                    activeSlides.push(newSlide); // add index to list of active slides
                 }
             }
 
@@ -98,17 +100,20 @@ function initImageSlider1() {
             });
         }
 
+        // initialize active slide styles
+        slider.on('init reInit', function(event, slick) {
+            slider.find('.image-slider-1__slide_active').removeClass('image-slider-1__slide_active'); // reset active class on all slides
 
-        // customize slider after initialization
-        slider.on('init reInit breakpoint', function(event, slick) {
-            // initialize active slide styles
+            // add class to active slide(s) and all clones
             $.each(getActiveSlides(slick.currentSlide, slick.slideCount), function(i, slideIndex) {
                 getSlideClones(slideIndex, slick.slideCount).each(function() {
                     $(this).find('.image-slider-1__slide').addClass('image-slider-1__slide_active');
                 });
             });
+        });
 
-            // adjust styles if all slides are visible without advancing slider
+        // adjust styles if all slides are visible without advancing slider
+        slider.on('init reInit breakpoint', function(event, slick) {
             if (slick.slideCount <= slick.options.slidesToShow) {
                 sliderWrap.addClass('image-slider-1_static');
             } else {
@@ -167,6 +172,10 @@ function initImageSlider1() {
                 }, 10);
             }
         });
+
+        // add classes to indicate that slick is active
+        sliderWrap.addClass('image-slider-1_slick');
+        slider.find('.image-slider-1__slide').addClass('image-slider-1__slide_slick');
 
         // initialize slick
         slider.slick({
