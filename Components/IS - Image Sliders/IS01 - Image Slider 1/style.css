@@ -27,17 +27,17 @@
     border: 0;
     border-radius: var(--g_border-radius_lg);
 }
-.image-slider-1_slick .image-slider-1__button {
-    display: block;
-}
-.image-slider-1_static .image-slider-1__button {
-    display: none;
-}
 .image-slider-1__button_prev {
     left: 0;
 }
 .image-slider-1__button_next {
     right: 0;
+}
+.image-slider-1_slick .image-slider-1__button {
+    display: block;
+}
+.image-slider-1_static .image-slider-1__button {
+    display: none;
 }
 .image-slider-1_flush-left .image-slider-1__button_prev,
 .image-slider-1_flush .image-slider-1__button_prev {
