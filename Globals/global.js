@@ -4,6 +4,7 @@ var enhanceMouseFocusActive = false;
 var enhanceMouseFocusEnabled = false;
 var enhanceMouseFocusElements = $();
 var enhanceMouseFocusNewElements = $();
+var enhanceMouseFocusClickedElements = $();
 
 
 function enhanceMouseFocusUpdate() {
@@ -14,12 +15,16 @@ function enhanceMouseFocusUpdate() {
         
         // if an element gets focus due to a mouse click, prevent it from keeping focus
         enhanceMouseFocusNewElements.mousedown(function() {
+            var clickedElement = this;
+
             enhanceMouseFocusActive = true;
+            enhanceMouseFocusClickedElements = enhanceMouseFocusClickedElements.add(clickedElement);
             setTimeout(function(){
                 enhanceMouseFocusActive = false;
-            }, 50);
+                enhanceMouseFocusClickedElements = enhanceMouseFocusClickedElements.not(clickedElement);
+            }, 0);
         }).on('focus', function() {
-            if (enhanceMouseFocusActive) {
+            if (enhanceMouseFocusActive && enhanceMouseFocusClickedElements.is(this)) {
                 $(this).blur();
             }
         });
