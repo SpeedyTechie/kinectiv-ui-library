@@ -1,5 +1,5 @@
 # IS01 - Image Slider 1
-v1.0.1
+v1.0.2
 
 ### Dependencies
 * [slick 1.8.0](http://kenwheeler.github.io/slick/)

@@ -131,7 +131,7 @@ function initImageSlider1() {
         });
 
         // advance the slider in the corresponding direction on next/previous button click
-        sliderButtons.click(function() {
+        sliderButtons.on('click', function() {
             if ($(this).hasClass('image-slider-1__button_prev')) {
                 slider.slick('slickPrev');
             } else {
@@ -168,7 +168,7 @@ function initImageSlider1() {
             // if old slide is focused, move focus to current slide
             if (slider.has(document.activeElement) && ($(document.activeElement).is('.image-slider-1__item') || $(document.activeElement).parents('.image-slider-1__item:not(.slick-active)').length > 0)) {
                 setTimeout(function() {
-                    slider.find('.image-slider-1__item.slick-active').focus();
+                    slider.find('.image-slider-1__item.slick-active').trigger('focus');
                 }, 10);
             }
         });
