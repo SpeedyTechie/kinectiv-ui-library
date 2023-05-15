@@ -3,30 +3,30 @@
 body {
     --g_font-family_title: 'Zilla Slab', serif;
 }
+.site {
+    background-color: #e4e4e4 !important;
+}
 
 /* Component Preview */
-.kul {
-    background-color: #e4e4e4;
-}
-.kul__component {
+.kul-component {
     padding: 0 100px 100px;
 }
-.kul__component_top_none,
-.kul__component_y_none {
+.kul-component_top_none,
+.kul-component_y_none {
     padding-top: 0;
 }
-.kul__component_bottom_none,
-.kul__component_y_none {
+.kul-component_bottom_none,
+.kul-component_y_none {
     padding-bottom: 0;
 }
-.kul__component_right_none,
-.kul__component_x_none {
+.kul-component_right_none,
+.kul-component_x_none {
     padding-right: 0;
 }
-.kul__component_left_none,
-.kul__component_x_none {
+.kul-component_left_none,
+.kul-component_x_none {
     padding-left: 0;
 }
-.kul__component:first-child {
+.kul-component:first-child {
     padding-top: 100px;
 }

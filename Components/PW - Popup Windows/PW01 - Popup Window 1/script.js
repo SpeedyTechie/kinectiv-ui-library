@@ -4,14 +4,12 @@ function initPopupWindow1() {
     $('.popup-window-1').each(function() {
         var $window = $(window);
         var body = $('body');
+        var site = $('.site');
 
         var popup = $(this);
         var popupWrap = popup.find('.popup-window-1__wrap');
         var popupContent = popupWrap.find('.popup-window-1__content');
         var closeButton = popupContent.find('.popup-window-1__close');
-
-        var pageFocusStart = $('<span class="screen-reader-text screen-reader-text_fixed" tabindex="0">');
-        var pageFocusEnd = $('<span class="screen-reader-text screen-reader-text_fixed" tabindex="0">');
 
         var isOpen = false;
         var popupID = popup.attr('id');
@@ -28,6 +26,8 @@ function initPopupWindow1() {
 
         // initialize popup
         function initPopup() {
+            popup.appendTo(body); // move popup to body
+
             // trap focus inside popup
             $('<span class="screen-reader-text" tabindex="0">').prependTo(popupWrap).on('focus', function(e) {
                 e.stopImmediatePropagation();
@@ -38,18 +38,6 @@ function initPopupWindow1() {
                 e.stopImmediatePropagation();
 
                 getFocusableElements().first().trigger('focus');
-            });
-
-            // move focus to popup when it enters the page
-            pageFocusStart.on('focus', function(e) {
-                e.stopImmediatePropagation();
-
-                getFocusableElements().first().trigger('focus');
-            });
-            pageFocusEnd.on('focus', function(e) {
-                e.stopImmediatePropagation();
-
-                getFocusableElements().last().trigger('focus');
             });
 
             // standardize undefined popup ID
@@ -77,9 +65,9 @@ function initPopupWindow1() {
             lastFocus = $(document.activeElement);
             getFocusableElements().first().trigger('focus');
 
-            // enable capturing focus when it enters the page
-            pageFocusStart.prependTo(body);
-            pageFocusEnd.appendTo(body);
+            // prevent screen readers and keyboard navigation from accessing page content while popup is open
+            site.prop('inert', true);
+            site.attr('aria-hidden', true);
 
             isOpen = true; // update open state
 
@@ -101,9 +89,9 @@ function initPopupWindow1() {
 
             scrollTop = $window.scrollTop(); // get scroll position
 
-            // disable capturing focus when it enters the page
-            pageFocusStart.detach();
-            pageFocusEnd.detach();
+            // allow screen readers and keyboard navigation to access page content
+            site.prop('inert', false);
+            site.removeAttr('aria-hidden');
 
             // return focus to previously focused element (and prevent page from scrolling)
             lastFocus.trigger('focus');
