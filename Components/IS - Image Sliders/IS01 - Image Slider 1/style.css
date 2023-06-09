@@ -145,7 +145,7 @@
 .image-slider-1__slider[data-slides-to-show="5"] .image-slider-1__item:nth-child(3),
 .image-slider-1__slider[data-slides-to-show="5"] .image-slider-1__item:nth-child(4),
 .image-slider-1__slider[data-slides-to-show="5"] .image-slider-1__item:nth-child(5) {
-    display: block;
+    display: block; /* show additional slides before slick is initialized based on data-slides-to-show */
 }
 .image-slider-1__slide {
     position: relative;

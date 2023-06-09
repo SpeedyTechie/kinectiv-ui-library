@@ -87,8 +87,12 @@ function initImageSlider1() {
             });
         }
 
-        // initialize active slide styles
-        slider.on('init reInit', function(event, slick) {
+        // initialize active slide styles (and update when breakpoints are hit)
+        slider.on('init reInit breakpoint', function(event, slick) {
+            // update slides to show
+            slidesToShow = slick.options.slidesToShow;
+            slider.attr('data-slides-to-show', slidesToShow);
+
             slider.find('.image-slider-1__slide_active').removeClass('image-slider-1__slide_active'); // reset active class on all slides
 
             // add class to active slide(s) and all clones
@@ -97,10 +101,8 @@ function initImageSlider1() {
                     $(this).find('.image-slider-1__slide').addClass('image-slider-1__slide_active');
                 });
             });
-        });
 
-        // adjust styles if all slides are visible without advancing slider
-        slider.on('init reInit breakpoint', function(event, slick) {
+            // adjust styles if all slides are visible without advancing slider
             if (slick.slideCount <= slick.options.slidesToShow) {
                 sliderWrap.addClass('image-slider-1_static');
             } else {
