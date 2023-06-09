@@ -1,5 +1,7 @@
 /* Popup Window 1 */
 
+var popupWindow1ActionQueue = [];
+
 function initPopupWindow1() {
     $('.popup-window-1').each(function() {
         var $window = $(window);
@@ -176,6 +178,11 @@ function initPopupWindow1() {
         popup.data('openPopupFunction', openPopup);
         popup.data('closePopupFunction', closePopup);
     });
+
+    // perform any actions stored in queue
+    $.each(popupWindow1ActionQueue, function (i, v) {
+        v.$el.popupWindow1(v.action, v.updateHash);
+    });
 }
 
 // add jQuery method to trigger popup open/close
@@ -187,12 +194,24 @@ $.fn.popupWindow1 = function(action, updateHash) {
 
         if (typeof openPopup === 'function') {
             openPopup(updateHash);
+        } else {
+            popupWindow1ActionQueue.push({
+                $el: this,
+                action: 'open',
+                updateHash: updateHash
+            });
         }
     } else if (action == 'close') {
         var closePopup = this.data('closePopupFunction');
 
         if (typeof closePopup === 'function') {
             closePopup(updateHash);
+        } else {
+            popupWindow1ActionQueue.push({
+                $el: this,
+                action: 'close',
+                updateHash: updateHash
+            });
         }
     }
 
