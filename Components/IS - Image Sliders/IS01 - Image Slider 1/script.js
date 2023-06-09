@@ -15,20 +15,7 @@ function initImageSlider1() {
 
             // if there are multiple active slides, add them all
             if (slidesToShow > 1) {
-                // add slides to left of current slide
-                for (i = Math.ceil((slidesToShow - 1) / 2); i > 0; i--) {
-                    var newSlide = currentSlide - i;
-
-                    // get correct slide index if the index is outside the range of slides
-                    if (newSlide < 0) {
-                        newSlide = total + newSlide;
-                    }
-
-                    activeSlides.push(newSlide); // add index to list of active slides
-                }
-
-                // add slides to right of current slide
-                for (i = Math.floor((slidesToShow - 1) / 2); i > 0; i--) {
+                for (i = 0; i < slidesToShow; i++) {
                     var newSlide = currentSlide + i;
 
                     // get correct slide index if the index is outside the range of slides
@@ -75,7 +62,7 @@ function initImageSlider1() {
 
             // check each button for hover/focus
             sliderButtons.each(function() {
-                var linkedSlide = ($(this).hasClass('image-slider-1__button_prev')) ? slick.currentSlide - Math.ceil((slidesToShow - 1) / 2) - 1 : slick.currentSlide + Math.floor((slidesToShow - 1) / 2) + 1; // get the slide behind this button
+                var linkedSlide = ($(this).hasClass('image-slider-1__button_prev')) ? slick.currentSlide - 1 : slick.currentSlide + slidesToShow; // get the slide behind this button
 
                 // get correct slide index if the direction causes looping to the beginning/end of the slider
                 if (linkedSlide < 0) {
@@ -180,8 +167,6 @@ function initImageSlider1() {
         // initialize slick
         slider.slick({
             arrows: false,
-            centerMode: true,
-            centerPadding: null,
             slidesToShow: slidesToShow,
             speed: 400,
             touchThreshold: 4

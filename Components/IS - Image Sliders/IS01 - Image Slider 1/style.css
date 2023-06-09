@@ -135,6 +135,18 @@
 .image-slider-1__item:not(:first-child):not(.slick-slide) {
     display: none; /* hide all but first slide until slick is initialized */
 }
+.image-slider-1__slider[data-slides-to-show="2"] .image-slider-1__item:nth-child(2),
+.image-slider-1__slider[data-slides-to-show="3"] .image-slider-1__item:nth-child(2),
+.image-slider-1__slider[data-slides-to-show="3"] .image-slider-1__item:nth-child(3),
+.image-slider-1__slider[data-slides-to-show="4"] .image-slider-1__item:nth-child(2),
+.image-slider-1__slider[data-slides-to-show="4"] .image-slider-1__item:nth-child(3),
+.image-slider-1__slider[data-slides-to-show="4"] .image-slider-1__item:nth-child(4),
+.image-slider-1__slider[data-slides-to-show="5"] .image-slider-1__item:nth-child(2),
+.image-slider-1__slider[data-slides-to-show="5"] .image-slider-1__item:nth-child(3),
+.image-slider-1__slider[data-slides-to-show="5"] .image-slider-1__item:nth-child(4),
+.image-slider-1__slider[data-slides-to-show="5"] .image-slider-1__item:nth-child(5) {
+    display: block;
+}
 .image-slider-1__slide {
     position: relative;
     display: flex;
