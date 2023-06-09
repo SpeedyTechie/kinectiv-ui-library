@@ -68,3 +68,6 @@
     margin-right: 10px;
     line-height: 1;
 }
+.popup-window-1__close .button__icon {
+    background-image: url('images/x.svg');
+}

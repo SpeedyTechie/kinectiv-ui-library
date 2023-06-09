@@ -47,7 +47,9 @@ function initPopupWindow1() {
         }
 
         // open popup
-        function openPopup(updateHash = true) {
+        function openPopup(updateHash) {
+            if (updateHash === undefined) updateHash = true;
+
             if (isOpen) return; // if the popup is already open, don't do anything
 
             $window.trigger('close-all-popups', false); // close any open popups
@@ -84,7 +86,9 @@ function initPopupWindow1() {
         }
 
         // close popup
-        function closePopup(updateHash = true) {
+        function closePopup(updateHash) {
+            if (updateHash === undefined) updateHash = true;
+
             if (!isOpen) return; // if the popup is already closed, don't do anything
 
             scrollTop = $window.scrollTop(); // get scroll position
@@ -175,7 +179,9 @@ function initPopupWindow1() {
 }
 
 // add jQuery method to trigger popup open/close
-$.fn.popupWindow1 = function(action, updateHash = true) {
+$.fn.popupWindow1 = function(action, updateHash) {
+    if (updateHash === undefined) updateHash = true;
+    
     if (action == 'open') {
         var openPopup = this.data('openPopupFunction');
 

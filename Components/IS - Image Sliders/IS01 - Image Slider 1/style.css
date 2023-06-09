@@ -83,6 +83,7 @@
     padding: 0 calc(var(--image-slider-1_button-width) + (var(--image-slider-1_gap) / 2));
     border-radius: var(--g_border-radius_lg);
     overflow: hidden;
+    isolation: isolate; /* fix border-radius overflow bug in Safari */
 }
 .image-slider-1_next-only .image-slider-1__slider {
     margin-left: calc((var(--image-slider-1_gap) / 2) * -1);
