@@ -155,9 +155,9 @@ function initImageSlider1() {
             updateSlideHover();
             
             // if old slide is focused, move focus to current slide
-            if (slider.has(document.activeElement) && ($(document.activeElement).is('.image-slider-1__item') || $(document.activeElement).parents('.image-slider-1__item:not(.slick-active)').length > 0)) {
+            if (slider.has(document.activeElement) && ($(document.activeElement).is('.image-slider-1__item:not(.slick-active)') || $(document.activeElement).parents('.image-slider-1__item:not(.slick-active)').length > 0)) {
                 setTimeout(function() {
-                    slider.find('.image-slider-1__item.slick-active').trigger('focus');
+                    slider.find('.image-slider-1__item.slick-active').first().trigger('focus');
                 }, 10);
             }
         });
