@@ -37,12 +37,14 @@
 }
 .button_color_secondary-light {
     background-color: var(--g_color_2-3);
+    color: var(--g_color_black);
 }
 .button_color_tertiary {
     background-color: var(--g_color_3-1);
 }
 .button_color_tertiary-light {
     background-color: var(--g_color_3-3);
+    color: var(--g_color_black);
 }
 .button:visited {
     color: var(--g_color_white);
