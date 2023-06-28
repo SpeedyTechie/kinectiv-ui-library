@@ -1,0 +1,111 @@
+.layout-group-3__image {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: var(--g_border-radius_lg);
+}
+.layout-group-3__image_h_sm {
+    padding-top: 30%;
+}
+.layout-group-3__image_h_md {
+    padding-top: 45%;
+}
+.layout-group-3__image_h_lg {
+    padding-top: 60%;
+}
+.layout-group-3__image:last-child {
+    margin-bottom: 0;
+}
+.layout-group-3__top {
+    display: flex;
+}
+.layout-group-3__top-main {
+    flex: 1 0 auto;
+    width: 50%;
+}
+.layout-group-3__details {
+    margin-top: 5px;
+    overflow: hidden;
+}
+.layout-group-3__details:first-child {
+    margin-top: 0;
+}
+.layout-group-3__details-inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1em;
+}
+.layout-group-3__details-item {
+    position: relative;
+    margin: 0 1em;
+}
+.layout-group-3__details-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -1em;
+    height: 1em;
+    margin-top: -0.5em;
+    border-left: 2px solid;
+}
+.layout-group-3__top-side {
+    max-width: 50%;
+    padding-left: 100px;
+    text-align: right;
+}
+.layout-group-3__button {
+    margin-top: 12px;
+}
+.layout-group-3__button:first-child {
+    margin-top: 0;
+}
+.layout-group-3__bottom {
+    max-width: var(--g_max-width_sm);
+    margin-top: 20px;
+}
+.layout-group-3__bottom:first-child {
+    margin-top: 0;
+}
+.layout-group-3__bottom-item {
+    margin: 15px 0 0;
+}
+.layout-group-3__info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px -12px;
+}
+.layout-group-3__info-item {
+    padding: 4px 12px;
+}
+.layout-group-3__info-text {
+    position: relative;
+    padding-left: 1.7em;
+    line-height: 1.3;
+}
+.layout-group-3__info-text-line {
+    display: block;
+}
+.layout-group-3__info-icon {
+    position: absolute;
+    top: 0.05em;
+    left: 0;
+    width: 1.2em;
+    height: 1.2em;
+}
+.layout-group-3__info-icon-fill {
+    fill: currentColor;
+}
+.layout-group-3__info-link {
+    color: currentColor;
+    text-decoration-color: transparent;
+    transition: var(--g_transition_default);
+}
+.layout-group-3__info-link:visited {
+    color: currentColor;
+}
+.layout-group-3__info-link:hover,
+.layout-group-3__info-link:focus,
+.layout-group-3__info-link:active {
+    color: currentColor;
+    text-decoration-color: currentColor;
+}
