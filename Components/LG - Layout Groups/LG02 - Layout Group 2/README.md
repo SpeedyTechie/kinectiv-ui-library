@@ -20,4 +20,3 @@ v1.0.0
     * `layout-group-2__item_top_`: Top margin
         * `layout-group-2__item_top_sm`
         * `layout-group-2__item_top_none`
-
