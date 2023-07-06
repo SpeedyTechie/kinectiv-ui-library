@@ -1,4 +1,4 @@
-# LG02 - Layout Group 2
+# LG04 - Layout Group 4
 v1.0.0
 
 ### Dependencies
