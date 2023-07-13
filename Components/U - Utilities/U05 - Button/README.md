@@ -1,5 +1,5 @@
 # U05 - Button
-v1.0.3
+v1.0.4
 
 ### Modifiers
 * `button`
