@@ -1,0 +1,153 @@
+.search-bar-1__label {
+    display: block;
+}
+.search-bar-1__bar {
+    display: flex;
+    margin-top: 12px;
+    font-size: 18px;
+}
+.search-bar-1__bar_sm {
+    margin-top: 6px;
+    font-size: 14px;
+}
+.search-bar-1__bar_md {
+    margin-top: 10px;
+    font-size: 16px;
+}
+.search-bar-1__bar:first-child {
+    margin-top: 0;
+}
+.search-bar-1__input {
+    background-color: var(--g_color_white);
+    background-image: url('images/search-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 1.4em;
+    background-position: 1em;
+    display: block;
+    width: 100%;
+    padding: 1.25em 1.25em 1.25em 3em;
+    font-family: var(--g_font-family_default);
+    font-size: inherit;
+    line-height: 1;
+    border: 0;
+    border-radius: var(--g_border-radius_lg);
+    outline: 0;
+}
+.search-bar-1__bar_sm .search-bar-1__input {
+    background-size: 1.1em;
+    background-position: 0.8em;
+    padding: 0.55em 0.85em 0.55em 2.4em;
+    border-radius: var(--g_border-radius_sm);
+}
+.search-bar-1__bar_md .search-bar-1__input {
+    background-size: 1.1em;
+    background-position: 0.8em;
+    padding: 0.7em 1em 0.7em 2.5em;
+    border-radius: var(--g_border-radius_md);
+}
+.search-bar-1__bar_alt .search-bar-1__input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.search-bar-1__input::placeholder {
+    color: var(--g_color_1-2);
+}
+.search-bar-1__input::-ms-clear {
+    display: none;
+    width : 0;
+    height: 0;
+}
+.search-bar-1__input::-ms-reveal {
+    display: none;
+    width : 0;
+    height: 0;
+}
+.search-bar-1__input::-webkit-search-decoration,
+.search-bar-1__input::-webkit-search-cancel-button,
+.search-bar-1__input::-webkit-search-results-button,
+.search-bar-1__input::-webkit-search-results-decoration {
+    display: none;
+}
+.search-bar-1__side {
+    flex: 0 0 auto;
+    margin-left: 10px;
+}
+.search-bar-1__bar_sm .search-bar-1__side {
+    margin-left: 3px;
+}
+.search-bar-1__bar_md .search-bar-1__side {
+    margin-left: 5px;
+}
+.search-bar-1__bar_alt .search-bar-1__side {
+    background-color: var(--g_color_white);
+    margin-left: 0;
+    padding: 0.4em;
+    border-radius: var(--g_border-radius_lg);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.search-bar-1__bar_sm.search-bar-1__bar_alt .search-bar-1__side {
+    background-color: transparent;
+    padding: 0;
+    border-radius: var(--g_border-radius_sm);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.search-bar-1__bar_md.search-bar-1__bar_alt .search-bar-1__side {
+    background-color: transparent;
+    padding: 0;
+    border-radius: var(--g_border-radius_md);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.search-bar-1__button {
+    background-color: var(--g_color_1-1);
+    display: block;
+    height: 100%;
+    padding: 1.125em;
+    font-size: inherit;
+    line-height: 1;
+    border: 0;
+    border-radius: var(--g_border-radius_lg);
+    transition: var(--g_transition_default);
+}
+.search-bar-1__button:hover,
+.search-bar-1__button:focus,
+.search-bar-1__button:active {
+    background-color: var(--g_color_black);
+}
+.search-bar-1__bar_alt .search-bar-1__button {
+    padding: 0.725em;
+    border-radius: var(--g_border-radius_md);
+}
+.search-bar-1__bar_sm .search-bar-1__button {
+    padding: 0.55em;
+    border-radius: var(--g_border-radius_sm);
+}
+.search-bar-1__bar_md .search-bar-1__button {
+    padding: 0.625em;
+    border-radius: var(--g_border-radius_md);
+}
+.search-bar-1__bar_sm.search-bar-1__bar_alt .search-bar-1__button,
+.search-bar-1__bar_md.search-bar-1__bar_alt .search-bar-1__button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.search-bar-1__button::before {
+    content: '';
+    background-image: url('images/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    display: block;
+    width: 1.25em;
+    height: 1.25em;
+}
+.search-bar-1__bar_sm .search-bar-1__button::before {
+    width: 1em;
+    height: 1em;
+}
+.search-bar-1__bar_md .search-bar-1__button::before {
+    width: 1.15em;
+    height: 1.15em;
+}
