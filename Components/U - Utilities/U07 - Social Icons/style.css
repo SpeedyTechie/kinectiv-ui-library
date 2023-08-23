@@ -1,0 +1,30 @@
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.25em;
+    font-size: 18px;
+}
+.social-icons__item {
+    flex: 0 0 auto;
+    padding: 0.25em;
+}
+.social-icons__icon {
+    display: block;
+    width: auto;
+    height: 1em;
+}
+.social-icons__link {
+    color: var(--g_color_black);
+    transition: var(--g_transition_default);
+}
+.social-icons__link:visited {
+    color: var(--g_color_black);
+}
+.social-icons__link:hover,
+.social-icons__link:focus,
+.social-icons__link:active {
+    color: var(--g_color_1-2);
+}
+.social-icons__icon-fill {
+    fill: currentColor;
+}
