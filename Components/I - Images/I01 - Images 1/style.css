@@ -1,0 +1,33 @@
+.images-1__title {
+    margin-bottom: 20px;
+}
+.images-1__title:last-child {
+    margin-bottom: 0;
+}
+.images-1__text {
+    margin-top: 15px;
+}
+.images-1__text:first-child {
+    margin-top: 0;
+}
+.images-1__grid {
+    border-radius: var(--g_border-radius_lg);
+    overflow: hidden;
+    isolation: isolate; /* fix border-radius overflow bug in Safari */
+}
+.images-1__row {
+    display: flex;
+    margin: 0 -2px 4px;
+}
+.images-1__item {
+    flex: 0 1 auto;
+    width: 100%;
+    padding: 0 2px;
+}
+.images-1__image {
+    display: block;
+    width: 100%;
+}
+.images-1__grid_all-rounded .images-1__image {
+    border-radius: var(--g_border-radius_lg);
+}
