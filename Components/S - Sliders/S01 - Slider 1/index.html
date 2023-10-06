@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>S01 - Slider 1</title>
+
+        <!-- Preview/Testing CSS & JS -->
+        <link rel="stylesheet" href="../../../Assets/kul.css" type="text/css" />
+        <script src="../../../Assets/jquery.js" type="text/javascript"></script>
+
+        <!-- Global CSS & JS -->
+        <link rel="stylesheet" href="../../../Globals/global.css" type="text/css" />
+        <script src="../../../Globals/global.js" type="text/javascript"></script>
+
+        <!-- Dependency CSS & JS -->
+        <link rel="stylesheet" href="../../../Assets/slick.css" type="text/css" />
+        <script src="../../../Assets/slick.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="../../U - Utilities/U01 - Background Image/style.css" type="text/css" />
+        <link rel="stylesheet" href="../../U - Utilities/U03 - Text/style.css" type="text/css" />
+        <link rel="stylesheet" href="../../U - Utilities/U04 - Title/style.css" type="text/css" />
+        <link rel="stylesheet" href="../../U - Utilities/U05 - Button/style.css" type="text/css" />
+
+        <!-- Component CSS & JS -->
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script src="script.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="site">
+            <div class="kul-component">
+                <div class="slider-1 slider-1_x_lg slider-1_y_md">
+                    <div class="slider-1__main">
+                        <button type="button" class="button button_sm button_square slider-1__button slider-1__button_prev">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Previous Slide"></div>
+                        </button>
+                        <div class="slider-1__slider">
+                            <div class="slider-1__slide">
+                                <div class="slider-1__slide-content">
+                                    <div class="slider-1__item">
+                                        <div class="slider-1__image slider-1__image_h_sm bg-image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_lg">
+                                        <p class="slider-1__text text">Lorem ipsum dolor sit amet consectetur adipiscing elit nulla inceptos pellentesque, habitasse porttitor tellus potenti accumsan blandit ullamcorper vulputate posuere suscipit venenatis, hac et sapien interdum dictum suspendisse ultrices porta mus. Etiam luctus mattis erat neque vestibulum sociosqu lobortis, libero lacus turpis torquent leo dictumst fames.</p>
+                                    </div>
+                                    <div class="slider-1__item">
+                                        <p class="slider-1__title title title_sm">First Lastname</p>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_sm">
+                                        <p class="slider-1__text text text_sm">Optional Title/Position/Credit/etc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-1__slide">
+                                <div class="slider-1__slide-content">
+                                    <div class="slider-1__item">
+                                        <div class="slider-1__image slider-1__image_h_sm bg-image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_lg">
+                                        <p class="slider-1__text text">Another slide with less text than the first one.</p>
+                                    </div>
+                                    <div class="slider-1__item">
+                                        <p class="slider-1__title title title_sm">Name Goes Here</p>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_sm">
+                                        <p class="slider-1__text text text_sm">Some Details or Something</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-1__slide">
+                                <div class="slider-1__slide-content">
+                                    <div class="slider-1__item">
+                                        <div class="slider-1__image slider-1__image_h_sm bg-image" style="background-image: url('../../../Assets/image.svg');" role="img" aria-label="Test Image"></div>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_lg">
+                                        <p class="slider-1__text text">Ac condimentum tristique egestas massa himenaeos, viverra interdum nunc suscipit vulputate, iaculis imperdiet augue diam. Fringilla quam nisi ornare aptent justo porttitor.</p>
+                                    </div>
+                                    <div class="slider-1__item">
+                                        <p class="slider-1__title title title_sm">Hello World</p>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_sm">
+                                        <p class="slider-1__text text text_sm">Testing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="button button_sm button_square slider-1__button slider-1__button_next">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Previous Slide"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="kul-component">
+                <div class="slider-1 slider-1_no-box">
+                    <div class="slider-1__main">
+                        <button type="button" class="button button_sm button_square slider-1__button slider-1__button_prev">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Previous Slide"></div>
+                        </button>
+                        <div class="slider-1__slider slider-1__slider_stretch">
+                            <div class="slider-1__slide">
+                                <div class="slider-1__slide-content">
+                                    <div class="slider-1__item">
+                                        <img src="../../../Assets/image.svg" width="865" height="90" alt="Test Image" class="slider-1__image" />
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_grow slider-1__item_top_lg">
+                                        <p class="slider-1__text text">Lorem ipsum dolor sit amet consectetur adipiscing elit nulla inceptos pellentesque, habitasse porttitor tellus potenti accumsan blandit ullamcorper vulputate posuere suscipit venenatis, hac et sapien interdum dictum suspendisse ultrices porta mus. Etiam luctus mattis erat neque vestibulum sociosqu lobortis, libero lacus turpis torquent leo dictumst fames.</p>
+                                    </div>
+                                    <div class="slider-1__item">
+                                        <p class="slider-1__title title title_sm">First Lastname</p>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_sm">
+                                        <p class="slider-1__text text text_sm">Optional Title/Position/Credit/etc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-1__slide">
+                                <div class="slider-1__slide-content">
+                                    <div class="slider-1__item">
+                                        <img src="../../../Assets/image.svg" width="865" height="90" alt="Test Image" class="slider-1__image" />
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_grow slider-1__item_top_lg">
+                                        <p class="slider-1__text text">Another slide with less text than the first one.</p>
+                                    </div>
+                                    <div class="slider-1__item">
+                                        <p class="slider-1__title title title_sm">Name Goes Here</p>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_sm">
+                                        <p class="slider-1__text text text_sm">Some Details or Something</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-1__slide">
+                                <div class="slider-1__slide-content">
+                                    <div class="slider-1__item">
+                                        <img src="../../../Assets/image.svg" width="865" height="90" alt="Test Image" class="slider-1__image" />
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_grow slider-1__item_top_lg">
+                                        <p class="slider-1__text text">Ac condimentum tristique egestas massa himenaeos, viverra interdum nunc suscipit vulputate, iaculis imperdiet augue diam. Fringilla quam nisi ornare aptent justo porttitor.</p>
+                                    </div>
+                                    <div class="slider-1__item">
+                                        <p class="slider-1__title title title_sm">Hello World</p>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_sm">
+                                        <p class="slider-1__text text text_sm">Testing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="button button_sm button_square slider-1__button slider-1__button_next">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Previous Slide"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="kul-component">
+                <div class="slider-1 slider-1_x_md slider-1_y_md" style="width: 785px;">
+                    <div class="slider-1__main">
+                        <button type="button" class="button button_sm button_square slider-1__button slider-1__button_prev">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Previous Slide"></div>
+                        </button>
+                        <div class="slider-1__slider">
+                            <div class="slider-1__slide">
+                                <div class="slider-1__slide-content">
+                                    <div class="slider-1__item slider-1__item_top_lg">
+                                        <p class="slider-1__text text">Lorem ipsum dolor sit amet consectetur adipiscing elit nulla inceptos pellentesque, habitasse porttitor tellus potenti accumsan blandit ullamcorper vulputate posuere suscipit venenatis, hac et sapien interdum dictum.</p>
+                                    </div>
+                                    <div class="slider-1__item">
+                                        <p class="slider-1__title title title_sm">First Lastname</p>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_sm">
+                                        <p class="slider-1__text text text_sm">Optional Title/Position/Credit/etc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-1__slide">
+                                <div class="slider-1__slide-content">
+                                    <div class="slider-1__item slider-1__item_top_lg">
+                                        <p class="slider-1__text text">Another slide with less text than the first one.</p>
+                                    </div>
+                                    <div class="slider-1__item">
+                                        <p class="slider-1__title title title_sm">Name Goes Here</p>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_sm">
+                                        <p class="slider-1__text text text_sm">Some Details or Something</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-1__slide">
+                                <div class="slider-1__slide-content">
+                                    <div class="slider-1__item slider-1__item_top_lg">
+                                        <p class="slider-1__text text">Ac condimentum tristique egestas massa himenaeos, viverra interdum nunc suscipit vulputate, iaculis imperdiet augue diam. Fringilla quam nisi ornare.</p>
+                                    </div>
+                                    <div class="slider-1__item">
+                                        <p class="slider-1__title title title_sm">Hello World</p>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_sm">
+                                        <p class="slider-1__text text text_sm">Testing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="button button_sm button_square slider-1__button slider-1__button_next">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Previous Slide"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="kul-component">
+                <div class="slider-1" style="width: 585px;">
+                    <div class="slider-1__main">
+                        <button type="button" class="button button_sm button_square slider-1__button slider-1__button_compact slider-1__button_prev">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Previous Slide"></div>
+                        </button>
+                        <div class="slider-1__slider">
+                            <div class="slider-1__slide">
+                                <div class="slider-1__slide-content">
+                                    <div class="slider-1__item slider-1__item_top_lg">
+                                        <p class="slider-1__text text">Lorem ipsum dolor sit amet consectetur adipiscing elit nulla inceptos pellentesque, habitasse porttitor tellus potenti accumsan blandit ullamcorper vulputate posuere suscipit venenatis, hac et sapien interdum dictum.</p>
+                                    </div>
+                                    <div class="slider-1__item">
+                                        <p class="slider-1__title title title_sm">First Lastname</p>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_sm">
+                                        <p class="slider-1__text text text_sm">Optional Title/Position/Credit/etc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-1__slide">
+                                <div class="slider-1__slide-content">
+                                    <div class="slider-1__item slider-1__item_top_lg">
+                                        <p class="slider-1__text text">Another slide with less text than the first one.</p>
+                                    </div>
+                                    <div class="slider-1__item">
+                                        <p class="slider-1__title title title_sm">Name Goes Here</p>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_sm">
+                                        <p class="slider-1__text text text_sm">Some Details or Something</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-1__slide">
+                                <div class="slider-1__slide-content">
+                                    <div class="slider-1__item slider-1__item_top_lg">
+                                        <p class="slider-1__text text">Ac condimentum tristique egestas massa himenaeos, viverra interdum nunc suscipit vulputate, iaculis imperdiet augue diam. Fringilla quam nisi ornare.</p>
+                                    </div>
+                                    <div class="slider-1__item">
+                                        <p class="slider-1__title title title_sm">Hello World</p>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_sm">
+                                        <p class="slider-1__text text text_sm">Testing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="button button_sm button_square slider-1__button slider-1__button_compact slider-1__button_next">
+                            <div class="button__icon button__icon_bg" role="img" aria-label="Previous Slide"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="kul-component">
+                <div class="slider-1" style="width: 585px;">
+                    <div class="slider-1__main">
+                        <div class="slider-1__slider">
+                            <div class="slider-1__slide">
+                                <div class="slider-1__slide-content">
+                                    <div class="slider-1__item slider-1__item_top_lg">
+                                        <p class="slider-1__text text">Lorem ipsum dolor sit amet consectetur adipiscing elit nulla inceptos pellentesque, habitasse porttitor tellus potenti accumsan blandit ullamcorper vulputate posuere suscipit venenatis, hac et sapien interdum dictum.</p>
+                                    </div>
+                                    <div class="slider-1__item">
+                                        <p class="slider-1__title title title_sm">First Lastname</p>
+                                    </div>
+                                    <div class="slider-1__item slider-1__item_top_sm">
+                                        <p class="slider-1__text text text_sm">Optional Title/Position/Credit/etc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

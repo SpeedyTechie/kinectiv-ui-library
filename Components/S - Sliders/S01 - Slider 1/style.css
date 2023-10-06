@@ -1,0 +1,111 @@
+.slider-1 {
+    background-color: var(--g_color_1-4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 50px;
+    text-align: center;
+    border-radius: var(--g_border-radius_lg);
+    box-shadow: var(--g_box-shadow_default);
+}
+.slider-1_x_md {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.slider-1_x_lg {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.slider-1_y_md {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.slider-1_no-box {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+.slider-1__main {
+    display: flex;
+    align-items: center;
+}
+.slider-1__button {
+    flex: 0 0 auto;
+}
+.slider-1__button_prev {
+    margin-right: 40px;
+}
+.slider-1__button_next {
+    margin-left: 40px;
+}
+.slider-1__button_prev.slider-1__button_compact {
+    margin-right: 20px;
+}
+.slider-1__button_next.slider-1__button_compact {
+    margin-left: 20px;
+}
+.slider-1__button .button__icon {
+    background-image: url('images/arrow.svg');
+}
+.slider-1__button_prev .button__icon {
+    transform: scaleX(-1);
+}
+.slider-1__slider {
+    flex: 1 0 auto;
+    width: 0;
+}
+.slider-1__slider .slick-track {
+    display: flex;
+    align-items: center;
+}
+.slider-1__slider_stretch .slick-track {
+    align-items: stretch;
+}
+.slider-1__slider .slick-slide {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+}
+.slider-1__slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 5px;
+}
+.slider-1__slide:not(:first-child):not(.slick-slide) {
+    display: none; /* hide all but first slide until slick is initialized */
+}
+.slider-1__item {
+    flex: 0 0 auto;
+    margin: 10px 0 0;
+}
+.slider-1__item_grow {
+    flex-grow: 1;
+}
+.slider-1__item_top_sm {
+    margin-top: 5px;
+}
+.slider-1__item_top_lg {
+    margin-top: 15px;
+}
+.slider-1__item_top_none,
+.slider-1__item:first-child {
+    margin-top: 0;
+}
+.slider-1__image {
+    display: block;
+    width: 100%;
+    border-radius: var(--g_border-radius_lg);
+}
+.slider-1__image_h_sm {
+    padding-top: 10%;
+}
+.slider-1__image_h_md {
+    padding-top: 15%;
+}
+.slider-1__image_h_lg {
+    padding-top: 25%;
+}
